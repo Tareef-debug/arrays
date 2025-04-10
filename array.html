@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tareef</h1>
+    <p id="demo"></p>
+   
+    <p id="demo2"></p>
+    
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+    <script>
+        var tareef = [
+            "smart",
+            "creative",
+            "dumb and dumber",
+        ]
+        document.getElementById("demo2").innerHTML = tareef[2];
+        document.getElementById("demo").innerHTML = tareef.join("^");
+        tareef.pop();
+        document.getElementById("demo1").innerHTML = tareef;
+        function add(a,b){
+            return a+b
+        }
+        function average(a,b){
+            return add(a,b)/2
+        }
+        let result = average(201, 301)
+        document.getElementById("demo3").innerHTML = result;
+    </script>
+</body>
+</html>
